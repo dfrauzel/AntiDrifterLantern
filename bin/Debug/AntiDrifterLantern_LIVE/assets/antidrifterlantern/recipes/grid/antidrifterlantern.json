@@ -1,0 +1,14 @@
+[
+	{
+		"ingredientPattern": "GCT,_P_",
+		"ingredients": {
+			"G": { "type": "block", "code": "game:glassslab-plain-down-free" },
+			"C": { "type": "item",  "code": "game:candle" },
+			"T": { "type": "item",  "code": "game:gear-temporal" },
+			"P": { "type": "item",  "code": "game:metalplate-bismuth" },
+		},
+		"width": 3,
+		"height": 2,
+		"output": { "type": "block", "code": "adlantern-up" }
+	},
+]

@@ -1,0 +1,10 @@
+{
+  "Type": "code",
+  "ModID": "antidrifterlantern",
+  "Name": "Anti Drifter Lantern",
+  "Description": "A craftable lantern that prevents Drifter (or other) spawns in a configurable radius.",
+  "TextureSize": 32,
+  "Version": "1.0.0",
+  "Website": "",
+  "Authors": ["weathersong"],
+}

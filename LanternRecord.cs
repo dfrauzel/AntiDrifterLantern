@@ -14,7 +14,11 @@ namespace AntiDrifterLantern
 		public BlockPos Pos;
 
 		[ProtoMember(2)]
-		public int FuelRemaining;
+		public int FuelTicksRemaining;
+
+		internal BlockEntityAntiDrifterLantern LanternEntity;
+
+		//public int FuelRemaining => GetFuelRemaining();
 
 		// Should only be used by the Deserializer.
 		public LanternRecord()
@@ -22,12 +26,13 @@ namespace AntiDrifterLantern
 			Pos = new BlockPos();
 		}
 
-		// New lantern plonked down.
-        public LanternRecord(BlockPos isAtPos, int fuelRemaining = 0)
+        public LanternRecord(BlockPos isAtPos, BlockEntityAntiDrifterLantern lantern)
         {
 			Pos = new BlockPos(isAtPos.X, isAtPos.Y, isAtPos.Z);
 
-			FuelRemaining = fuelRemaining;
+			LanternEntity = lantern;
+
+			FuelTicksRemaining = 0;
         }
 
 		public bool PosMatches(BlockPos pos)
